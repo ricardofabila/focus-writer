@@ -1,5 +1,3 @@
-# focus-writer
-
 ## Focus Writer - A distraction-free, online text editor.
 
 Focus is the minimalist text editor writers so desperately needed. Focus presents you with a place were you get rid of all of the distractions and concentrate on your craft.
@@ -14,3 +12,6 @@ Although there are quite a few online text editors out there, I felt that I need
 You can reach me at [_Ricardo Fabila_](https://twitter.com/Ricardo_Fabila "Ricardo Fabila’s Twitter") on twitter.
 
 Happy writing!
+
+
+![Screenshot](/image.png "Screenshot of Focus Writer")
