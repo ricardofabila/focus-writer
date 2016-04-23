@@ -1,0 +1,159 @@
+/*********************************************
+ * BASE STYLES
+ *********************************************/
+
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+    overflow: hidden;
+}
+
+
+html, body {
+    font-family: "Helvetica Neue", Arial , sans-serif;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+
+body {
+    padding-bottom: 40px;
+    padding-right: 10px;
+    overflow-y: scroll;
+    padding-left: 10px;
+    padding-top: 20px;
+    min-width: 800px;
+    width: 100%;
+
+    -webkit-transition: all 600ms;
+    -moz-transition: all 600ms;
+    -ms-transition: all 600ms;
+    -o-transition: all 600ms;
+    transition: all 600ms;
+}
+
+section {
+    min-width: 1000px;
+    max-width: 1000px;
+    height: 100%;
+    margin: auto;
+}
+
+.normal_header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 46px;
+}
+
+.white_header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 46px;
+}
+
+article {
+    padding-bottom: 50px;
+    line-height: 30px;
+    margin-top: 22px;
+    min-height: 90%;
+    font-size: 22px;
+    display: block;
+}
+
+.no-overflow {
+    overflow: hidden;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+/* Used by the ui bubble to stop wrapping */
+.lengthen {
+    display: block;
+    width: 300px;
+    height: 100%;
+}
+
+.white {
+    background: #F4F4F4;
+    color: #111;
+}
+
+.dark {
+    background-color: #333333;
+    color: #fafafa;
+}
+
+.sepia {
+    background-color: #F1EADB;
+    color: #111111;
+}
+
+.ui {
+    position: absolute;
+    padding: 20px;
+    width: 65px;
+    bottom: 0px;
+    right: 20px;
+    top: 0px;
+}
+
+.ui:hover button {
+    opacity: 0.6;
+}
+
+.ui button:hover {
+    opacity: 1;
+}
+
+.ui button, .text-options button {
+    background: none;
+    cursor: pointer;
+    opacity: 0.8;
+    padding: 0px;
+    height: 30px;
+    width: 30px;
+    border: 0px;
+}
+
+.normal_a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.white_a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+
+/*********************************************
+ * PRINT
+ *********************************************/
+
+@media print {
+
+    body {
+        overflow: visible;
+    }
+
+    section {
+        color: #111 !important;
+    }
+
+    .ui,{
+        display: none;
+    }
+}
