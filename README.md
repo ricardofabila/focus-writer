@@ -1,6 +1,6 @@
 ## Focus Writer - A distraction-free, online text editor.
 
-Focus is the minimalist text editor writers so desperately needed. Focus presents you with a place were you get rid of all of the distractions and concentrate on your craft.
+Focus is the minimalist text editor writers so desperately needed. Focus presents you with a place where you get rid of all of the distractions and concentrate on your craft.
 No worrying about aesthetics. No formatting problems. Just you and your words.
 Just open. Relax. And get some writing done.
 You can worry about the little details later.
