@@ -54,14 +54,15 @@ function saveTextAsFile() {
     var textToWrite = document.getElementById("textArticle").innerHTML;
     //now i have to get all content of that inner html and concatenate that on a string changing <br> as \n linebreaks.
     var cleanText = textToWrite.replace(/<br[^>]*>/gi, "\n");
-    cleanText = cleanText.replace(/<p[^>]*>/gi, " ");
-    cleanText = cleanText.replace(/&nbsp;/gi, '');
+    cleanText = cleanText.replace(/<.*?>/gi, " ");
+    cleanText = cleanText.replace(/&nbsp;/gi, "");
     textToWrite = cleanText;
-    var textFileAsBlob = new Blob([textToWrite], {type: 'text/plain'});
-    var fileNameToSaveAs = document.getElementById("title").innerHTML;
+    var textFileAsBlob = new Blob([textToWrite], { type: "text/plain" });
+    var fileNameToSaveAs = document.getElementById("title").innerHTML.trim() + ".txt";
     var downloadLink = document.createElement("a");
+    var title = fileNameToSaveAs.replace(/_*/gi, "");
 
-    downloadLink.download = fileNameToSaveAs;
+    downloadLink.download = title;
     downloadLink.innerHTML = "Download File";
 
     if (window.webkitURL != null) {
