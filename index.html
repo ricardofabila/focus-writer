@@ -1,95 +1,174 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <!-- MISC/META -->
+    <title>Focus Writer</title>
+    <meta charset="utf-8" />
+    <meta
+      name="Description"
+      content="Focus Writer - A distraction-free, online text editor.
+        Focus is the minimalist text editor writers so desperately needed. Focus presents you with a place were you get rid of all of the distractions and concentrate on your craft. No worrying about aesthetics. No formatting problems. Just you and your words. Just open. Relax. And get some writing done. You can worry about the little details later."
+    />
+    <meta
+      name="keywords"
+      content="focus, writer, text, editor, online, free, distraction-free, night, mode"
+    />
+    <meta author="Ricardo Fabila Reyes" />
 
-    <head>
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="57x57"
+      href="images/favicon/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="images/favicon/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="images/favicon/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="images/favicon/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="60x60"
+      href="images/favicon/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="120x120"
+      href="images/favicon/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="76x76"
+      href="images/favicon/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="images/favicon/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon/favicon-196x196.png"
+      sizes="196x196"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/favicon/favicon-128.png"
+      sizes="128x128"
+    />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
-        <!-- MISC/META -->
-        <title>Focus Writer</title>
-        <meta charset="utf-8">
-        <meta name="Description" content="Focus Writer - A distraction-free, online text editor.
-        Focus is the minimalist text editor writers so desperately needed. Focus presents you with a place were you get rid of all of the distractions and concentrate on your craft. No worrying about aesthetics. No formatting problems. Just you and your words. Just open. Relax. And get some writing done. You can worry about the little details later.">
-        <meta name="keywords" content="focus, writer, text, editor, online, free, distraction-free, night, mode">
-        <meta author="Ricardo Fabila Reyes">
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-        <!-- Favicon -->
-        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/favicon/apple-touch-icon-57x57.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/favicon/apple-touch-icon-60x60.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/favicon/apple-touch-icon-120x120.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/favicon/apple-touch-icon-76x76.png" />
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/favicon/apple-touch-icon-152x152.png" />
-        <link rel="icon" type="image/png" href="images/favicon/favicon-196x196.png" sizes="196x196" />
-        <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
-        <link rel="icon" type="image/png" href="images/favicon/favicon-128.png" sizes="128x128" />
-        <meta name="application-name" content="&nbsp;"/>
-        <meta name="msapplication-TileColor" content="#FFFFFF" />
-        <meta name="msapplication-TileImage" content="mstile-144x144.png" />
-        <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
-        <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
-        <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
-        <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+  <!--Body-->
+  <body class="white" id="background">
+    <!--Side Bar-->
+    <div class="ui">
+      <div class="wrapper">
+        <div class="top editing">
+          <!--White Background Button-->
+          <button id="white-button" title="White Background">
+            <img src="images/white.png" />
+          </button>
+          <!--Sepia Background Button-->
+          <button id="sepia-button" title="Sepia Background">
+            <img src="images/sepia.png" />
+          </button>
+          <!--Dark Background Button-->
+          <button id="dark-button" title="Dark Background">
+            <img src="images/dark.png" />
+          </button>
+          <!--Full Screen-->
+          <button id="fullscreen-button" title="Fullscreen">
+            <img src="images/Full-Screen.png" />
+          </button>
+          <!--Full Screen-->
+          <button id="download-button" title="Download as text file">
+            <img src="images/Save.png" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--/Side Bar-->
 
-        <!-- CSS -->
-        <link href="css/style.css" rel="stylesheet">
+    <!--Writting Canvas-->
+    <section>
+      <!--Title-->
+      <header contenteditable="true" class="normal_header" id="title">
+        Welcome to Focus Writer
+      </header>
+      <!--Paragraphs-->
+      <article contenteditable="true" class="content" id="textArticle">
+        <p>
+          Focus is the minimalist text editor writers so desperately needed.
+          Focus presents you with a place where you get rid of all of the
+          distractions and concentrate on your craft.
+        </p>
+        <p>
+          No worrying about aesthetics. No formatting problems. Just you and
+          your words.
+        </p>
+        <p>Just open. Relax. And get some writing done.</p>
+        <p>You can worry about the little details later.</p>
+        <h1>How to use</h1>
+        <p>
+          Simply delete this very text and start writing. That’s it. Nothing
+          complicated.
+        </p>
+        <p>
+          Peace,<br /><a
+            href="https://twitter.com/Ricardo_Fabila"
+            title="Ricardo Fabila on Twitter"
+            class="normal_a"
+            id="twitterHandle"
+            >Ricardo Fabila</a
+          >
+        </p>
+      </article>
+      <!--/Paragraphs-->
+    </section>
+    <!--/Writting Canvas-->
 
-    </head>
-
-    <!--Body-->
-    <body class="white" id="background">
-            <!--Side Bar-->
-            <div class="ui">
-                <div class="wrapper">
-                    <div class="top editing">
-                        <!--White Background Button-->
-                        <button id="white-button" title="White Background">
-                            <img src="images/white.png">
-                        </button>
-                        <!--Sepia Background Button-->
-                        <button id="sepia-button" title="Sepia Background">
-                            <img src="images/sepia.png">
-                        </button>
-                        <!--Dark Background Button-->
-                        <button id="dark-button" title="Dark Background">
-                            <img src="images/dark.png">
-                        </button>
-                        <!--Full Screen-->
-                        <button id="fullscreen-button" title="Fullscreen">
-                            <img src="images/Full-Screen.png">
-                        </button>
-                        <!--Full Screen-->
-                        <button id="download-button" title="Download as text file">
-                            <img src="images/Save.png">
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-
-        <!--Writting Canvas-->
-        <section>
-            <!--Title-->
-            <header contenteditable="true" class="normal_header" id="title">
-                Welcome to Focus Writer
-            </header>
-            <!--Paragraphs-->
-            <article contenteditable="true" class="content" id="textArticle">
-                <p> Focus is the minimalist text editor writers so desperately needed. Focus presents you with a place where you get rid of all of the distractions and concentrate on your craft.</p>
-                <p>No worrying about aesthetics. No formatting problems. Just you and your words.</p>
-                <p>Just open. Relax. And get some writing done.</p>
-                <p>You can worry about the little details later.</p>
-                <h1>How to use</h1>
-                <p>Simply delete this very text and start writing. That’s it. Nothing complicated.</p>
-                <p>Peace,<br><a href="https://twitter.com/Ricardo_Fabila" title="Ricardo Fabila on Twitter" class="normal_a" id="twitterHandle">Ricardo Fabila</a></p>
-            </article>
-        </section>
-
-        <!-- Buttons JS -->
-        <script src="js/screenfull.js"></script>
-        <script src="js/buttons.js"></script>
-
-    </body>
+    <!-- Buttons JS -->
+    <script src="js/screenfull.js"></script>
+    <script src="js/buttons.js"></script>
+  </body>
 </html>
